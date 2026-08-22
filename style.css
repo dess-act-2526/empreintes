@@ -1,0 +1,373 @@
+:root{
+    --font-main:myFont, sans-serif, verdana;
+    --couleur-blanc: rgb(255, 254, 247);
+    --couleur-bg: rgb(217, 70, 17);
+    --couleur-noir: #212329;
+    --couleur-bordure: #333333;
+    --couleur-hover: #ff7200;
+    --couleur-hovergris: #818285;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(design/Numans-Regular.ttf);
+  font-display: fallback; /*fist ms of blank while font loads, if fails fallbacks to default*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--couleur-bg);
+    background-image: url('design/grandbg.svg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    position: sticky;
+}
+
+/*NAVBAR SECTION*/
+
+.navbar{
+    position:sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+    max-width:100%;
+    z-index:999;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--couleur-blanc);
+    font-family: var(--font-main);
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: var(--couleur-hover);
+}
+
+/*MAIN SECTION*/
+
+.main{
+    width: 100%;
+    flex: 1 0 auto; /*grows to fill leftover space instead of forcing a fixed height*/
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    width: 210px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo {
+    display: block;
+    width: 210px;
+    height: 80px;
+} 
+
+.menu{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*TITLE CONTENT SECTION*/
+
+.content-title{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-main);
+    color:  var(--couleur-blanc)
+}
+
+.content-title h1{
+    font-size: 100px;
+    margin: 0 0 50px 0;
+}
+
+.content-title p{
+    line-height: 23px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/*SECTION OEUVRES*/
+
+.container-boutons-oeuvres{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    background-color: var(--couleur-blanc);
+    padding: 50px;
+    z-index:1;
+}
+
+.boutons-oeuvres{
+    display: flex;
+    gap: 40px;
+}
+
+.boutons-oeuvres a{
+  font: bold 15px myFont;
+  text-decoration: none;
+  background-color: var(--couleur-blanc);
+  color: var(--couleur-bordure);
+  padding: 20px;
+  border: 2px solid var(--couleur-bordure);
+  border-radius: 5px;
+}
+
+.boutons-oeuvres a:hover{
+    color:var(--couleur-hovergris);
+    transition: 0.3s ease-out;
+}
+
+/*SNS SECTION*/
+
+.sns{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.sns a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:  var(--couleur-blanc);
+}
+
+.sns ion-icon{
+    color: var(--couleur-blanc);
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.sns ion-icon:hover{
+    color: var(--couleur-hover);
+}
+
+/* SECTION À PROPOS */
+
+.content-apropos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--couleur-blanc);
+    margin-top: 50px;
+}
+
+.content-apropos h1{
+    font-size: 40px;
+    color: var(--couleur-blanc);
+}
+
+.content-apropos p{
+    line-height: 27px;
+    color: var(--couleur-blanc);
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.content-apropos h2{
+    font-size: 36px;
+    color: var(--couleur-blanc);
+    margin-top: 100px;
+}
+
+/*GRID OEUVRES*/
+
+.grid-oeuvres{
+    display: grid;
+    background-color: var(--couleur-blanc);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 10px;
+    min-width: 0;
+}
+
+.item{
+    justify-self: center;
+    min-width: 0;
+    padding: 10px 20px;
+}
+
+.item:hover img{
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nom-artiste, .titre-oeuvre {
+    font-family:var(--font-main);
+    padding-right:0px;
+    padding-left: 10px;
+}
+
+.nom-artiste{
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.titre-oeuvre{
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    .grid-oeuvres{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*DESCRIPTION SECTION*/
+
+.description-page .navbar{
+    background-color: var(--couleur-noir);
+    border-bottom: 10px solid var(--couleur-noir);
+}
+
+.description-page .main{
+    background-color: var(--couleur-blanc)
+}
+
+.grid-description{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.colonne-gauche{
+    display: flex;
+}
+
+.colonne-droite{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-gauche img, .item-haut img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rangee-bas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.item-preview img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-gauche .nom-artiste{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.bio-demarche, .precisions-cartel, .texte-cartel{
+    font-family: var(--font-main);
+}
+
+/*FOOTER SECTION*/
+
+.footer-container{
+    background-color: var(--couleur-noir);
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color: var(--couleur-noir);
+    color: var(--couleur-blanc);
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    text-decoration: none;
+    color: var(--couleur-blanc);
+    margin-bottom: 1rem;
+}
+
+.footer-heading a:hover{
+    color: var(--couleur-hovergris);
+    transition: 0.3s ease-out;
+}
+
+.footer-credits p{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+    color: var(--couleur-blanc);
+}
