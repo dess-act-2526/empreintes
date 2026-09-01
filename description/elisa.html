@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Codou Thiendella Fall — DESS ACT 2026</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="description-page">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="icon">
+                <a href="../index.html">
+                    <img
+                        src="../logos/logodess.png"
+                        alt="Logo DESS ACT"
+                        class="logo"
+                    >
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">ACCUEIL</a>
+                    </li>
+
+                    <li>
+                        <a href="../oeuvres.html">ŒUVRES</a>
+                    </li>
+
+                    <li>
+                        <a href="../a-propos.html">À PROPOS</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         CONTENU PRINCIPAL
+    ========================== -->
+
+    <main class="main">
+
+        <div class="grid-description">
+
+            <!-- =========================
+                 COLONNE GAUCHE
+            ========================== -->
+
+            <section class="colonne-gauche">
+
+                <div class="item-gauche">
+
+                    <img
+                        src="../profil/eli.webp"
+                        alt="Elisa"
+                        class="photo-artiste"
+                    >
+
+                    <p class="nom-artiste">
+                       Elisa Hernández Riveiro 
+                    </p>
+
+                     <p class="titre-oeuvre">
+                        Raconte-moi, 2026
+                    </p>
+
+                    <div class="bio-demarche">
+
+                        <p>
+                            Issue d’un parcours familial marqué par l’immigration, Elisa  arrive au Canada durant son enfance. Elle  est aujourd’hui une artiste  basée  à Tiohtià:ke/Mooniyang/Montréal. Détentrice d’un Baccalauréat en stratégies de production culturelle et médiatique de l’Université du Québec à Montréal (UQÀM), elle a travaillé pendant plusieurs années dans la gestion de projets culturels et publicitaires. Elle renoue maintenant sa relation avec l’un de ses premiers amours – l’art – en poursuivant un DESS en arts, création et technologies à l’Université de Montréal. 
+                        </p>
+
+                        <p>
+                            TElisa Hernández Riveiro s’intéresse à la mémoire et aux souvenirs fragiles qui la composent. L’état nostalgique de l’artiste, façonné par la distance géographique avec sa famille, nourrit une affection profonde pour les moments vécus, transmis ou recueillis auprès d’autrui. Entre élan de préservation et tentative d’acceptation d’une perte, à son sens inévitable, son œuvre soulève le ressenti résiduel d’une vie antérieure et d’un espace-temps désormais inaccessible. Sa démarche reste teintée par un questionnement existentiel et le désir inatteignable de préserver à jamais l’être aimé.   
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COLONNE DROITE
+                 CARROUSEL + CARTEL
+            ========================== -->
+
+            <section class="colonne-droite">
+
+                <!-- CARROUSEL -->
+
+                <div class="carrousel-oeuvre">
+
+                    <div class="carrousel-image" id="media-active">
+
+                        <img
+                            src="../carrousel/codou_1.png"
+                            alt="Eutou Buur Yi — La Cour des Rois"
+                            id="image-active"
+                        >
+
+                    </div>
+
+
+                    <!-- FLÈCHE GAUCHE -->
+
+                    <button
+                        class="carrousel-prev"
+                        onclick="mediaPrecedent()"
+                        aria-label="Média précédent"
+                    >
+                        ‹
+                    </button>
+
+
+                    <!-- FLÈCHE DROITE -->
+
+                    <button
+                        class="carrousel-next"
+                        onclick="mediaSuivant()"
+                        aria-label="Média suivant"
+                    >
+                        ›
+                    </button>
+
+
+                    <!-- INDICATEURS -->
+
+                    <div class="carrousel-indicateurs">
+
+                        <button
+                            class="indicateur active"
+                            onclick="afficherMedia(0)"
+                            aria-label="Afficher la première image"
+                        ></button>
+
+                        <button
+                            class="indicateur"
+                            onclick="afficherMedia(1)"
+                            aria-label="Afficher la deuxième image"
+                        ></button>
+
+                        <button
+                            class="indicateur"
+                            onclick="afficherMedia(2)"
+                            aria-label="Afficher la vidéo"
+                        ></button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     CARTEL
+                ========================== -->
+
+                <div class="item-cartel">
+
+                    <p class="precisions-cartel">
+                       installation interactive audiovisuelle, matériaux mixtes <br>
+                        empreinte psychique
+                    </p>
+
+                    <p class="texte-cartel">
+                        Se faire le sanctuaire de récits de vie : telle est l’aspiration de  Raconte-moi. Face à l’état fragile de la mémoire, l’installation exprime le profond désir de préserver ses plus précieux souvenirs, de les protéger de l’usure du temps. Au fil des pages d’un livre interactif, le public est invité à plonger dans les anecdotes racontées par différents individus. L’œuvre explore ainsi l’intangible – le patrimoine émotionnel qui perdure, comme une empreinte laissée par notre vécu.  
+                    </p>
+
+                </div>
+
+
+                         <!-- 4 ARTISTES : COLONNE DROITE -->
+                <div class="autres-artistes">
+
+                    
+
+        <a href="manue.html" class="artiste-lien">
+
+            <img
+                src="../profil/emm.webp"
+                alt="Emmanuelle"
+            >
+
+            <p class="autre-artiste-nom">
+                Emmanuelle
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Humain, nature, machine, 2026
+            </p>
+
+        </a>
+
+
+        <a href="eva.html" class="artiste-lien">
+
+            <img
+                src="../profil/eva.webp"
+                alt="Eva"
+            >
+
+            <p class="autre-artiste-nom">
+                Eva
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Au-delà des cimes, 2026
+            </p>
+
+        </a>
+
+         
+         <a href="ghislain.html" class="artiste-lien">
+
+             <img
+                src="../profil/ghi.webp"
+                alt="Ghislain"
+             >
+
+             <p class="autre-artiste-nom">
+               Ghislain
+             </p>
+
+             <p class="autre-artiste-oeuvre">
+                Drô Yanyan (Cauchemar), 2026
+             </p>
+
+             </a>
+
+
+        <a href="joe.html" class="artiste-lien">
+
+            <img
+                src="../profil/joe.webp"
+                alt="joe"
+            >
+
+            <p class="autre-artiste-nom">
+                Joey
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Voyageur contemplant une mer 
+               de nuages, 2026
+            </p>
+
+        </a>
+
+
+    </div>
+            
+    <!-- ESPACE VIDE : COLONNE GAUCHE -->
+    <div class="artistes-espace-gauche"></div>
+
+</section>
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div class="footer-container">
+
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+
+                <h2>Contact & liens</h2>
+
+                <a href="mailto:frederic.dallaire-tremblay@umontreal.ca">
+                    Frédéric Dallaire-Tremblay, responsable de programme
+                </a>
+
+                <a
+                    href="https://admission.umontreal.ca/programmes/dess-en-arts-creation-et-technologies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Le programme
+                </a>
+
+                <a href="#">
+                    Mentions légales
+                </a>
+
+                <div class="footer-credits">
+
+                    <p>
+                        © 2026 DESS Arts, Création, et Technologies.
+                        Tous droits réservés.
+                        <br><br>
+                        Site réalisé par Mathilde Elie,
+                        Codou Thiendella Fall et Franck Tackam-Tackam.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="sns">
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=100057380443084"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/dess_act_2026/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT CARROUSEL
+    ========================== -->
+
+    <script>
+
+        const medias = [
+
+            {
+                type: "image",
+                src: "../carrousel/codou_1.png"
+            },
+
+            {
+                type: "image",
+                src: "../carrousel/codou_2.png"
+            },
+
+            {
+                type: "video",
+                src: "../carrousel/codou_3.mp4"
+            }
+
+        ];
+
+
+        let mediaActuel = 0;
+
+
+        function afficherMedia(numero) {
+
+            mediaActuel = numero;
+
+            const conteneur =
+                document.getElementById("media-active");
+
+            const media = medias[mediaActuel];
+
+
+            /* On vide la zone actuelle */
+
+            conteneur.innerHTML = "";
+
+
+            /* =========================
+               IMAGE
+            ========================== */
+
+            if (media.type === "image") {
+
+                const image =
+                    document.createElement("img");
+
+                image.src = media.src;
+
+                image.alt =
+                    "Eutou Buur Yi — La Cour des Rois";
+
+                image.id = "image-active";
+
+                conteneur.appendChild(image);
+
+            }
+
+
+            /* =========================
+               VIDÉO
+            ========================== */
+
+            if (media.type === "video") {
+
+                const video =
+                    document.createElement("video");
+
+                video.src = media.src;
+
+                video.controls = true;
+
+                video.playsInline = true;
+
+                video.preload = "metadata";
+
+                conteneur.appendChild(video);
+
+            }
+
+
+            /* =========================
+               INDICATEURS
+            ========================== */
+
+            const indicateurs =
+                document.querySelectorAll(".indicateur");
+
+
+            indicateurs.forEach(
+                function(indicateur, index) {
+
+                    indicateur.classList.remove("active");
+
+                    if (index === mediaActuel) {
+
+                        indicateur.classList.add("active");
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        function mediaSuivant() {
+
+            mediaActuel++;
+
+            if (mediaActuel >= medias.length) {
+
+                mediaActuel = 0;
+
+            }
+
+            afficherMedia(mediaActuel);
+
+        }
+
+
+        function mediaPrecedent() {
+
+            mediaActuel--;
+
+            if (mediaActuel < 0) {
+
+                mediaActuel = medias.length - 1;
+
+            }
+
+            afficherMedia(mediaActuel);
+
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
+

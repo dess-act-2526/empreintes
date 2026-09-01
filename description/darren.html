@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Codou Thiendella Fall — DESS ACT 2026</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="description-page">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="icon">
+                <a href="../index.html">
+                    <img
+                        src="../logos/logodess.png"
+                        alt="Logo DESS ACT"
+                        class="logo"
+                    >
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">ACCUEIL</a>
+                    </li>
+
+                    <li>
+                        <a href="../oeuvres.html">ŒUVRES</a>
+                    </li>
+
+                    <li>
+                        <a href="../a-propos.html">À PROPOS</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         CONTENU PRINCIPAL
+    ========================== -->
+
+    <main class="main">
+
+        <div class="grid-description">
+
+            <!-- =========================
+                 COLONNE GAUCHE
+            ========================== -->
+
+            <section class="colonne-gauche">
+
+                <div class="item-gauche">
+
+                    <img
+                        src="../profil/dar.webp"
+                        alt="Daren Pimentel"
+                        class="photo-artiste"
+                    >
+
+                    <p class="nom-artiste">
+                        Darren Pimentel
+                    </p>
+
+                     <p class="titre-oeuvre">
+                        Introspection, 2026
+                    </p>
+
+                    <div class="bio-demarche">
+
+                        <p>
+                            Daren  Pimentel  est un trompettiste métamorphosé en cinéaste et artiste transdisciplinaire. Il a suivi des études en musique classique au Cégep de Saint-Laurent avant de se diriger vers le cinéma et les arts numériques à l’Université de Montréal. Il s’est produit comme musicien sur les scènes locales et internationales autant au sein d’ensembles classiques que de formations jazz, notamment avec Les Productions Orchestrales Populaires où il occupe également le rôle de directeur artistique. Son premier court-métrage CLAVIER (2022) a été sélectionné au FFEQ (2024).  
+                        </p>
+
+                        <p>
+                            L’artiste explore, à travers ses créations interactives, des enjeux sociaux et environnementaux actuels. De l’écriture du scénario au montage, il allie sonore et visuel pour créer des expériences percutantes. Ses recherches en art-thérapie et son intérêt pour le postmodernisme et le psychoréalisme enrichissent ses projets d’une dimension réflexive et transformative. 
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COLONNE DROITE
+                 CARROUSEL + CARTEL
+            ========================== -->
+
+            <section class="colonne-droite">
+
+                <!-- CARROUSEL -->
+
+                <div class="carrousel-oeuvre">
+
+                    <div class="carrousel-image" id="media-active">
+
+                        <img
+                            src="../carrousel/codou_1.png"
+                            alt="Eutou Buur Yi — La Cour des Rois"
+                            id="image-active"
+                        >
+
+                    </div>
+
+
+                    <!-- FLÈCHE GAUCHE -->
+
+                    <button
+                        class="carrousel-prev"
+                        onclick="mediaPrecedent()"
+                        aria-label="Média précédent"
+                    >
+                        ‹
+                    </button>
+
+
+                    <!-- FLÈCHE DROITE -->
+
+                    <button
+                        class="carrousel-next"
+                        onclick="mediaSuivant()"
+                        aria-label="Média suivant"
+                    >
+                        ›
+                    </button>
+
+
+                    <!-- INDICATEURS -->
+
+                    <div class="carrousel-indicateurs">
+
+                        <button
+                            class="indicateur active"
+                            onclick="afficherMedia(0)"
+                            aria-label="Afficher la première image"
+                        ></button>
+
+                        <button
+                            class="indicateur"
+                            onclick="afficherMedia(1)"
+                            aria-label="Afficher la deuxième image"
+                        ></button>
+
+                        <button
+                            class="indicateur"
+                            onclick="afficherMedia(2)"
+                            aria-label="Afficher la vidéo"
+                        ></button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     CARTEL
+                ========================== -->
+
+                <div class="item-cartel">
+
+                    <p class="precisions-cartel">
+                        écran, kinect, modem, ordinateur PC, MadMapper
+                    </p>
+
+                    <p class="texte-cartel">
+                        Introspection  est une œuvre interactive jumelant les arts numériques à l’art thérapie. Daren Pimentel se base sur ses expériences personnelles et ses recherches sur les potentiels thérapeutiques de l’art pour explorer les limites expressives de l’art technologique. L’artiste transforme la salle d’exposition en lieu clos anxiogène, rappelant l’état d’esprit ressenti durant une période d’angoisse profonde. 
+                    </p>
+
+                </div>
+
+
+                         <!-- 4 ARTISTES : COLONNE DROITE -->
+                <div class="autres-artistes">
+
+
+        <a href="elisa.html" class="artiste-lien">
+
+            <img
+                src="../profil/eli.webp"
+                alt="Elisa"
+            >
+
+            <p class="autre-artiste-nom">
+                Elisa
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Raconte-moi, 2026
+            </p>
+
+        </a>
+
+
+        <a href="manue.html" class="artiste-lien">
+
+            <img
+                src="../profil/emm.webp"
+                alt="Emmanuelle"
+            >
+
+            <p class="autre-artiste-nom">
+                Emmanuelle
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Humain, nature, machine, 2026
+            </p>
+
+        </a>
+
+
+        <a href="eva.html" class="artiste-lien">
+
+            <img
+                src="../profil/eva.webp"
+                alt="Eva"
+            >
+
+            <p class="autre-artiste-nom">
+                Eva
+            </p>
+
+            <p class="autre-artiste-oeuvre">
+                Au-delà des cimes, 2026
+            </p>
+
+        </a>
+
+        <a href="ghislain.html" class="artiste-lien">
+
+             <img
+                src="../profil/ghi.webp"
+                alt="Ghislain"
+             >
+
+             <p class="autre-artiste-nom">
+               Ghislain
+             </p>
+
+             <p class="autre-artiste-oeuvre">
+                Drô Yanyan (Cauchemar), 2026
+             </p>
+
+             </a>
+
+    </div>
+            
+    <!-- ESPACE VIDE : COLONNE GAUCHE -->
+    <div class="artistes-espace-gauche"></div>
+
+</section>
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div class="footer-container">
+
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+
+                <h2>Contact & liens</h2>
+
+                <a href="mailto:frederic.dallaire-tremblay@umontreal.ca">
+                    Frédéric Dallaire-Tremblay, responsable de programme
+                </a>
+
+                <a
+                    href="https://admission.umontreal.ca/programmes/dess-en-arts-creation-et-technologies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Le programme
+                </a>
+
+                <a href="#">
+                    Mentions légales
+                </a>
+
+                <div class="footer-credits">
+
+                    <p>
+                        © 2026 DESS Arts, Création, et Technologies.
+                        Tous droits réservés.
+                        <br><br>
+                        Site réalisé par Mathilde Elie,
+                        Codou Thiendella Fall et Franck Tackam-Tackam.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="sns">
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=100057380443084"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/dess_act_2026/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT CARROUSEL
+    ========================== -->
+
+    <script>
+
+        const medias = [
+
+            {
+                type: "image",
+                src: "../carrousel/codou_1.png"
+            },
+
+            {
+                type: "image",
+                src: "../carrousel/codou_2.png"
+            },
+
+            {
+                type: "video",
+                src: "../carrousel/codou_3.mp4"
+            }
+
+        ];
+
+
+        let mediaActuel = 0;
+
+
+        function afficherMedia(numero) {
+
+            mediaActuel = numero;
+
+            const conteneur =
+                document.getElementById("media-active");
+
+            const media = medias[mediaActuel];
+
+
+            /* On vide la zone actuelle */
+
+            conteneur.innerHTML = "";
+
+
+            /* =========================
+               IMAGE
+            ========================== */
+
+            if (media.type === "image") {
+
+                const image =
+                    document.createElement("img");
+
+                image.src = media.src;
+
+                image.alt =
+                    "Eutou Buur Yi — La Cour des Rois";
+
+                image.id = "image-active";
+
+                conteneur.appendChild(image);
+
+            }
+
+
+            /* =========================
+               VIDÉO
+            ========================== */
+
+            if (media.type === "video") {
+
+                const video =
+                    document.createElement("video");
+
+                video.src = media.src;
+
+                video.controls = true;
+
+                video.playsInline = true;
+
+                video.preload = "metadata";
+
+                conteneur.appendChild(video);
+
+            }
+
+
+            /* =========================
+               INDICATEURS
+            ========================== */
+
+            const indicateurs =
+                document.querySelectorAll(".indicateur");
+
+
+            indicateurs.forEach(
+                function(indicateur, index) {
+
+                    indicateur.classList.remove("active");
+
+                    if (index === mediaActuel) {
+
+                        indicateur.classList.add("active");
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        function mediaSuivant() {
+
+            mediaActuel++;
+
+            if (mediaActuel >= medias.length) {
+
+                mediaActuel = 0;
+
+            }
+
+            afficherMedia(mediaActuel);
+
+        }
+
+
+        function mediaPrecedent() {
+
+            mediaActuel--;
+
+            if (mediaActuel < 0) {
+
+                mediaActuel = medias.length - 1;
+
+            }
+
+            afficherMedia(mediaActuel);
+
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
+
