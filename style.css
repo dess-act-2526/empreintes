@@ -76,6 +76,29 @@ ul li a{
 ul li a:hover{
     color: var(--couleur-hover);
 }
+.page-accueil {
+    background-image: url('profil/paysage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-oeuvres {
+    background-image: url('profil/paysage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.page-accueil .main {
+    min-height: 100vh;
+}
+
+.page-oeuvres .main {
+    min-height: 100vh;
+}
+
 
 /*MAIN SECTION*/
 
