@@ -95,6 +95,19 @@ ul li a:hover{
     min-height: 100vh;
 }
 
+/* =========================================================
+   BACKGROUND — TABLETTES
+   ========================================================= */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    body.page-accueil,
+    body.page-oeuvres {
+        background-size: 85% auto;
+        background-position: center center;
+    }
+
+}
 
 /*MAIN SECTION*/
 
