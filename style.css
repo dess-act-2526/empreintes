@@ -394,7 +394,7 @@ ul li a:hover{
 
     text-align: left;
 
-    margin: 20 0 0px;
+    margin: 30 0 0 0px;
 
     padding-top: 5px;
 
@@ -631,6 +631,7 @@ ul li a:hover{
 .titre-oeuvre {
 
     margin-top: 0px;
+    margin-bottom: 10px
 
     font-family: var(--font-main);
 
