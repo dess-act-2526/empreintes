@@ -252,7 +252,7 @@ ul li a:hover{
 .item{
     justify-self: center;
     min-width: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .item:hover img{
@@ -268,8 +268,6 @@ ul li a:hover{
 
 .nom-artiste, .titre-oeuvre {
     font-family:var(--font-main);
-    padding-right:0px;
-    padding-left: 0px;
 }
 
 .nom-artiste{
@@ -279,7 +277,7 @@ ul li a:hover{
 }
 
 .titre-oeuvre{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 @media (max-width: 600px){
