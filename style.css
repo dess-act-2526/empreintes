@@ -269,7 +269,7 @@ ul li a:hover{
 .nom-artiste, .titre-oeuvre {
     font-family:var(--font-main);
     padding-right:0px;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .nom-artiste{
