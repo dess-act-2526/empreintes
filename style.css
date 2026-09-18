@@ -277,6 +277,7 @@ ul li a:hover{
 }
 
 .titre-oeuvre{
+    text-align: left;
     padding-bottom: 5px;
 }
 
