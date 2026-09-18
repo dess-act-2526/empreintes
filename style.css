@@ -630,8 +630,9 @@ ul li a:hover{
 
 .titre-oeuvre {
 
-    margin-top: 0px;
-    margin-bottom: 10px
+    margin-top: 10px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
 
     font-family: var(--font-main);
 
